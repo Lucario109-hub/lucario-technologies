@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111820">
+  <meta name="description" content="Fiktives Fitnessstudio-Demoprojekt von Lucario Technologies.">
+  <title>FORM — Fitness Demo</title>
+  <style>
+    :root{--bg:#111820;--panel:#1b2630;--white:#f3f4f1;--muted:#aab3b8;--lime:#c8f169;--line:#35414a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}.demo{position:sticky;top:0;z-index:10;padding:10px 14px;text-align:center;background:var(--lime);color:#111820;font-size:11px;font-weight:800;letter-spacing:.13em}
+    header{height:86px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff18}
+    .logo{font-size:27px;font-weight:900;letter-spacing:.08em}.logo span{color:var(--lime)}nav{display:flex;gap:30px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}nav a:hover{color:var(--lime)}
+    .hero{min-height:680px;padding:110px 8%;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,#536052 0,#29363a 24%,#111820 65%)}
+    .hero:after{content:"FORM";position:absolute;right:-3%;bottom:-11%;font-size:clamp(180px,34vw,470px);font-weight:900;letter-spacing:-.08em;color:#ffffff08;pointer-events:none}
+    .hero-content{position:relative;z-index:1;max-width:700px}.eyebrow{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+    h1{font-size:clamp(58px,10vw,112px);line-height:.9;letter-spacing:-.07em;margin:24px 0;font-weight:900;text-transform:uppercase}h1 span{color:var(--lime)}.hero p{max-width:510px;color:#c3cbd0;line-height:1.8;font-size:17px}
+    .btn{display:inline-block;margin-top:22px;padding:16px 23px;background:var(--lime);color:#111820;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.btn:hover{background:#e0ff9d}
+    .section{padding:100px 8%}.heading{max-width:700px}.heading h2{font-size:clamp(38px,6vw,68px);letter-spacing:-.06em;text-transform:uppercase;margin:16px 0}.heading p{color:var(--muted);line-height:1.8;max-width:600px}
+    .programs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:55px}.program{min-height:270px;background:var(--panel);padding:30px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);transition:.2s}.program:hover{transform:translateY(-5px);border-color:var(--lime)}.number{font-size:12px;color:var(--lime);font-weight:800}.program h3{font-size:27px;text-transform:uppercase;margin:0 0 12px}.program p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+    .statement{background:var(--lime);color:#111820;padding:85px 8%;display:flex;align-items:center;justify-content:space-between;gap:30px}.statement h2{font-size:clamp(38px,6vw,72px);line-height:.95;letter-spacing:-.06em;text-transform:uppercase;margin:0;max-width:720px}.statement p{max-width:270px;line-height:1.7;font-size:14px}
+    .schedule{background:#17212a}.days{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}.day{padding:22px;background:var(--panel);border-top:2px solid var(--lime)}.day strong{display:block;font-size:13px;letter-spacing:.1em}.day span{display:block;color:var(--muted);font-size:13px;margin-top:10px;line-height:1.6}
+    .contact{text-align:center}.contact p{color:var(--muted);line-height:1.8;max-width:620px;margin:0 auto}.contact h2{font-size:clamp(40px,7vw,76px);letter-spacing:-.06em;text-transform:uppercase;margin:18px 0}
+    footer{padding:28px 8%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:11px;letter-spacing:.08em}
+    @media(max-width:760px){header{height:auto;min-height:78px;padding:18px 6%;align-items:flex-start;gap:15px}.logo{font-size:22px}nav{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:9px;max-width:60%}.hero{min-height:600px;padding:90px 7%}.section{padding:75px 7%}.programs{grid-template-columns:1fr}.program{min-height:210px}.statement{display:block}.statement p{margin-top:25px}.days{grid-template-columns:1fr 1fr}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="demo">DEMO-PROJEKT · FORM IST EIN FIKTIVES FITNESSSTUDIO</div>
+  <header><a class="logo" href="#start">F<span>O</span>RM.</a><nav aria-label="Hauptnavigation"><a href="#training">Training</a><a href="#plan">Kursplan</a><a href="#kontakt">Info</a></nav></header>
+  <main>
+    <section class="hero" id="start"><div class="hero-content"><div class="eyebrow">Train smart · Move strong</div><h1>Dein Weg.<br><span>Deine Stärke.</span></h1><p>Ein modernes Fitnessstudio-Konzept mit Fokus auf Kraft, Bewegung und einer Community, die sich gegenseitig motiviert. Diese Website ist eine Design-Demo.</p><a class="btn" href="#training">Trainingsbereiche entdecken</a></div></section>
+    <section class="section" id="training"><div class="heading"><div class="eyebrow">Das Trainingskonzept</div><h2>Finde deinen Fokus.</h2><p>Drei beispielhafte Trainingsbereiche zeigen, wie ein Fitnessstudio seine Angebote übersichtlich und hochwertig präsentieren kann.</p></div>
+      <div class="programs">
+        <article class="program"><span class="number">01 / STRENGTH</span><div><h3>Krafttraining</h3><p>Freihanteln, Geräte und ein klarer Trainingsaufbau für unterschiedliche Ziele.</p></div></article>
+        <article class="program"><span class="number">02 / CONDITION</span><div><h3>Ausdauer</h3><p>Cardio, Intervalltraining und Bewegung für mehr Energie im Alltag.</p></div></article>
+        <article class="program"><span class="number">03 / MOBILITY</span><div><h3>Beweglichkeit</h3><p>Mobilität, Stabilität und kontrollierte Bewegung als Ergänzung zum Training.</p></div></article>
+      </div>
+    </section>
+    <section class="statement"><h2>Fortschritt entsteht durch Beständigkeit.</h2><p>Kein Druck. Kein Vergleich. Einfach Schritt für Schritt besser werden.</p></section>
+    <section class="section schedule" id="plan"><div class="heading"><div class="eyebrow">Beispielhafter Wochenplan</div><h2>Deine Trainingswoche.</h2><p>Dieser Musterplan ist nur ein Gestaltungselement. Er stellt keine realen Kurse oder Öffnungszeiten dar.</p></div>
+      <div class="days"><div class="day"><strong>MONTAG</strong><span>Strength Basics<br>17:00 – 18:00</span></div><div class="day"><strong>MITTWOCH</strong><span>Mobility Flow<br>17:30 – 18:15</span></div><div class="day"><strong>FREITAG</strong><span>Condition Circuit<br>16:30 – 17:15</span></div><div class="day"><strong>SAMSTAG</strong><span>Open Training<br>10:00 – 12:00</span></div></div>
+    </section>
+    <section class="section contact" id="kontakt"><div class="eyebrow">Fiktives Studio · Keine echte Buchung</div><h2>Starte in deinem Tempo.</h2><p>FORM ist ein erfundenes Beispielprojekt von Lucario Technologies. Es gibt keinen echten Standort, keine Mitgliedschaften und keine Anmeldung.</p><a class="btn" href="#start">Zurück nach oben</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> FORM. · FIKTIVES DEMO-PROJEKT</span><span>Website-Konzept von Lucario Technologies</span></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
