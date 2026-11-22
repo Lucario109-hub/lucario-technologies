@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17231f">
+  <meta name="description" content="Fiktives Restaurant-Demoprojekt von Lucario Technologies.">
+  <title>LAUREL — Restaurant Demo</title>
+  <style>
+    :root{--ink:#17231f;--paper:#f4f0e8;--cream:#e9e1d2;--gold:#b58a55;--muted:#77766e}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+    a{color:inherit;text-decoration:none}.demo{position:sticky;top:0;z-index:5;text-align:center;padding:9px 12px;background:#b58a55;color:#17231f;font:700 11px/1.3 Arial,sans-serif;letter-spacing:.12em}
+    header{position:absolute;z-index:2;top:40px;left:0;width:100%;padding:25px 7%;display:flex;align-items:center;justify-content:space-between;color:#fff}
+    .brand{font-size:27px;letter-spacing:.19em}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:.32em;margin-top:5px;text-align:center}
+    nav{display:flex;gap:30px;font:12px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}nav a{opacity:.9}nav a:hover{color:#e5c18e}
+    .hero{min-height:690px;height:88vh;max-height:900px;display:grid;place-items:center;text-align:center;color:white;padding:140px 22px 70px;background:linear-gradient(90deg,rgba(12,22,18,.78),rgba(12,22,18,.35)),radial-gradient(ellipse at 70% 55%,#8b7354 0,#4a4939 34%,#1b2922 75%)}
+    .hero-inner{max-width:780px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#e5c18e}.hero h1{font-size:clamp(55px,10vw,112px);font-weight:400;line-height:.94;margin:24px 0}.hero p{font-size:19px;line-height:1.7;color:#e8e4db;max-width:570px;margin:0 auto 35px}
+    .button{display:inline-block;padding:16px 27px;border:1px solid #d7b787;color:#fff;font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;transition:.2s}.button:hover{background:#d7b787;color:#17231f}
+    .section{padding:105px 8%;}.intro{max-width:760px;margin:auto;text-align:center}.intro h2,.split h2,.menu h2{font-size:clamp(36px,5vw,56px);font-weight:400;margin:18px 0}.intro p,.split p{font-size:17px;line-height:1.85;color:#66665e}
+    .rule{width:48px;height:1px;background:var(--gold);margin:27px auto}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:65px}.feature{padding:32px 26px;border-top:1px solid #c9b99f;text-align:center}.feature span{font-size:28px;color:var(--gold)}.feature h3{font-size:23px;font-weight:400;margin:16px 0 10px}.feature p{font:14px/1.7 Arial,sans-serif;color:var(--muted)}
+    .split{display:grid;grid-template-columns:1fr 1fr;min-height:480px;background:var(--ink);color:var(--paper)}.visual{min-height:420px;background:radial-gradient(ellipse at 50% 45%,#b58a55 0,#786044 18%,#394238 45%,#1b2922 75%);position:relative}.visual:after{content:'LAUREL';position:absolute;inset:0;display:grid;place-items:center;color:#fff8;font-size:clamp(38px,7vw,80px);letter-spacing:.2em}.split-copy{align-self:center;padding:70px 12%}.split p{color:#c5c3b9}.split .eyebrow{color:#d7b787}
+    .menu{text-align:center;background:var(--cream)}.menu-grid{max-width:900px;margin:50px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:0 50px;text-align:left}.dish{padding:22px 0;border-bottom:1px solid #c9bda9}.dish-top{display:flex;justify-content:space-between;gap:15px;font-size:21px}.dish p{font:13px/1.6 Arial,sans-serif;color:#77766e;margin:9px 0 0}
+    .reserve{text-align:center;background:#1b2922;color:var(--paper)}.reserve p{font-size:16px;color:#c5c3b9;line-height:1.8}.reserve .button{margin-top:20px}
+    footer{padding:28px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#111b17;color:#c8c4b9;font:11px Arial,sans-serif;letter-spacing:.08em}
+    @media(max-width:700px){header{padding:18px 6%;align-items:flex-start}.brand{font-size:22px}nav{gap:13px;font-size:9px;flex-wrap:wrap;justify-content:flex-end;max-width:58%}.hero{min-height:620px}.section{padding:75px 7%}.features{grid-template-columns:1fr;gap:5px}.split{grid-template-columns:1fr}.visual{min-height:270px}.split-copy{padding:65px 8%}.menu-grid{grid-template-columns:1fr}.dish-top{font-size:19px}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="demo">DEMO-PROJEKT · LAUREL IST EIN FIKTIVES RESTAURANT</div>
+  <header>
+    <a class="brand" href="#start">LAUREL<small>CUISINE & GARDEN</small></a>
+    <nav aria-label="Hauptnavigation"><a href="#konzept">Konzept</a><a href="#karte">Speisekarte</a><a href="#kontakt">Kontakt</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="start"><div class="hero-inner">
+      <div class="eyebrow">Saisonale Küche · Ruhiger Genuss</div>
+      <h1>Einfach gut.<br>Natürlich besonders.</h1>
+      <p>Ein fiktives Restaurantkonzept, das regionale Zutaten, ehrliches Handwerk und eine entspannte Atmosphäre verbindet.</p>
+      <a class="button" href="#karte">Unsere Beispielkarte</a>
+    </div></section>
+    <section class="section" id="konzept"><div class="intro">
+      <div class="eyebrow">Willkommen im Laurel</div><h2>Mit Liebe zur Saison.</h2><div class="rule"></div>
+      <p>Gutes Essen braucht keine großen Worte. Es braucht frische Zutaten, sorgfältige Zubereitung und Menschen, die gerne Gastgeber sind. Dieses Beispiel zeigt, wie eine moderne Restaurant-Website aussehen kann.</p>
+    </div>
+    <div class="features">
+      <article class="feature"><span>✳</span><h3>Regional gedacht</h3><p>Eine Beispielküche mit saisonalen Zutaten und kurzen Wegen.</p></article>
+      <article class="feature"><span>♧</span><h3>Handwerklich gekocht</h3><p>Klare Aromen, ausgewählte Produkte und eine kleine Karte.</p></article>
+      <article class="feature"><span>⌂</span><h3>Entspannt genießen</h3><p>Ein ruhiger Ort für gute Gespräche und gemeinsame Zeit.</p></article>
+    </div></section>
+    <section class="split"><div class="visual" role="img" aria-label="Abstrakte warme Farbfläche als Platzhalter für ein Restaurantfoto"></div><div class="split-copy">
+      <div class="eyebrow">Das Laurel-Gefühl</div><h2>Weniger, aber besser.</h2><p>Ein bewusst reduziertes Konzept: eine übersichtliche Auswahl, saisonal wechselnde Ideen und ein Ambiente, in dem man gerne länger bleibt.</p>
+    </div></section>
+    <section class="section menu" id="karte"><div class="eyebrow">Ein Blick auf die Karte</div><h2>Unsere Beispielgerichte</h2><div class="rule"></div>
+      <div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Geröstete Karotten</span><span>€ 9</span></div><p>Joghurt, Kräuteröl und geröstete Kerne · Beispielgericht</p></article>
+        <article class="dish"><div class="dish-top"><span>Gebackener Blumenkohl</span><span>€ 14</span></div><p>Zitronenbutter, Petersilie und Kartoffelcreme · Beispielgericht</p></article>
+        <article class="dish"><div class="dish-top"><span>Pilz-Risotto</span><span>€ 17</span></div><p>Waldpilze, frischer Thymian und Hartkäse · Beispielgericht</p></article>
+        <article class="dish"><div class="dish-top"><span>Apfel & Vanille</span><span>€ 8</span></div><p>Warmer Apfel, Vanillecreme und knusprige Streusel · Beispielgericht</p></article>
+      </div>
+      <p style="font:11px Arial,sans-serif;color:#777;margin-top:28px">Alle Gerichte und Preise sind frei erfundene Platzhalter, keine echte Speisekarte.</p>
+    </section>
+    <section class="section reserve" id="kontakt"><div class="eyebrow">Ein fiktiver Ort</div><h2>Wir freuen uns auf dich.</h2><p>Diese Demo enthält bewusst keine echte Adresse, Telefonnummer oder Reservierungsfunktion.<br>Für einen echten Restaurantbetrieb müssten diese Angaben vom Betreiber bereitgestellt werden.</p><a class="button" href="#start">Zurück nach oben</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> LAUREL · FIKTIVES DEMO-PROJEKT</span><span>Website-Konzept von Lucario Technologies</span></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
