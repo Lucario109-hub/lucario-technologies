@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fiktive Friseursalon-Demo von Lucario Technologies.">
+  <meta name="theme-color" content="#171714">
+  <title>STUDIO NOIR – Friseur-Demo</title>
+  <style>
+    :root{--bg:#171714;--panel:#22221e;--cream:#f3eee4;--muted:#b8b1a4;--gold:#c9a977;--line:#ffffff20}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .top{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:20px}
+    .brand{font-size:20px;font-weight:800;letter-spacing:4px}.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:3px}
+    nav{display:flex;gap:25px;font-size:13px;color:var(--muted)}
+    .hero{min-height:570px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:75px 9%;gap:40px;background:radial-gradient(ellipse at 80% 45%,#8c70402b,transparent 45%)}
+    .tag{font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+    h1{font-size:clamp(48px,7vw,82px);line-height:1.02;letter-spacing:-3px;margin:20px 0}
+    .hero p:not(.tag){color:var(--muted);max-width:450px;margin-bottom:28px}
+    .btn{display:inline-block;background:var(--gold);color:#171714;padding:13px 22px;font-size:12px;font-weight:bold;letter-spacing:1px}
+    .visual{min-height:360px;border:1px solid var(--line);background:linear-gradient(145deg,#514332,#24221d 55%,#111);display:flex;align-items:end;padding:25px;position:relative;overflow:hidden}
+    .visual:before{content:"";position:absolute;width:230px;height:310px;border-radius:48% 48% 12% 12%;background:linear-gradient(120deg,#d0b18a,#68513b 55%,#211b16);left:50%;top:50%;transform:translate(-50%,-45%);opacity:.8}
+    .visual span{position:relative;z-index:1;font-size:11px;letter-spacing:3px}
+    section.content{padding:85px 9%}
+    h2{font-size:clamp(30px,4vw,46px);margin:12px 0 30px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tile{padding:25px;background:var(--panel);border:1px solid var(--line)}
+    .tile h3{font-size:18px;margin-bottom:8px}.tile p{color:var(--muted);font-size:14px}
+    .price{color:var(--gold);font-size:24px;margin-top:15px}
+    .about{background:#201f1b}.about p{max-width:650px;color:var(--muted)}
+    .contact{text-align:center}.contact p{color:var(--muted);margin-bottom:22px}
+    footer{padding:25px 7%;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+    .demo-note{text-align:center;background:#332b20;color:#e8d7b8;padding:9px;font-size:11px;letter-spacing:.5px}
+    @media(max-width:700px){.top{flex-direction:column}nav{gap:15px;flex-wrap:wrap;justify-content:center}.hero{grid-template-columns:1fr;padding:65px 7%;}.visual{min-height:260px}.content{padding:65px 7%!important}.grid{grid-template-columns:1fr}footer{flex-direction:column;text-align:center;gap:8px}}
+  </style>
+</head>
+<body>
+  <div class="demo-note">DEMO-PROJEKT – STUDIO NOIR IST EIN FIKTIVES BEISPIEL</div>
+  <header class="top">
+    <a class="brand" href="#">NOIR<small>HAIR ATELIER</small></a>
+    <nav><a href="#leistungen">Leistungen</a><a href="#preise">Preise</a><a href="#studio">Studio</a><a href="#kontakt">Kontakt</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div><p class="tag">Schnitt. Stil. Persönlichkeit.</p><h1>Dein Stil.<br>Dein Moment.</h1><p>Ein moderner Look beginnt mit einem guten Gefühl. Entdecke die Beispiel-Website eines stilvollen Friseurateliers.</p><a class="btn" href="#kontakt">TERMIN ANFRAGEN</a></div>
+      <div class="visual"><span>STUDIO NOIR · HAIR ATELIER</span></div>
+    </section>
+    <section class="content" id="leistungen"><p class="tag">WAS WIR ANBIETEN</p><h2>Unsere Leistungen</h2><div class="grid">
+      <article class="tile"><h3>Cut & Style</h3><p>Individueller Haarschnitt und typgerechtes Styling.</p></article>
+      <article class="tile"><h3>Color & Shine</h3><p>Farbberatung und kreative Farbtechniken.</p></article>
+      <article class="tile"><h3>Care Ritual</h3><p>Pflege und Entspannung für gesund aussehendes Haar.</p></article>
+    </div></section>
+    <section class="content about" id="studio"><p class="tag">DAS STUDIO</p><h2>Raum für deinen eigenen Stil.</h2><p>Diese Beispielseite zeigt, wie ein Friseursalon seine Leistungen, Atmosphäre und Kontaktmöglichkeiten online präsentieren kann. Texte, Bilder und Angaben lassen sich später an einen echten Betrieb anpassen.</p></section>
+    <section class="content" id="preise"><p class="tag">TRANSPARENT & KLAR</p><h2>Beispielpreise</h2><div class="grid">
+      <article class="tile"><h3>Waschen & Schneiden</h3><p>Individueller Schnitt inklusive Beratung.</p><div class="price">ab 35 €</div></article>
+      <article class="tile"><h3>Styling</h3><p>Föhnen und Finish für deinen Look.</p><div class="price">ab 20 €</div></article>
+      <article class="tile"><h3>Farbservice</h3><p>Farbbehandlung nach Beratung.</p><div class="price">ab 65 €</div></article>
+    </div></section>
+    <section class="content contact" id="kontakt"><p class="tag">WIR FREUEN UNS AUF DICH</p><h2>Bereit für einen neuen Look?</h2><p>Die Kontaktdaten sind Platzhalter und müssen für einen echten Salon ersetzt werden.</p><a class="btn" href="mailto:kontakt@example.com?subject=Terminanfrage%20STUDIO%20NOIR">E-MAIL-KONTAKT (DEMO)</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> STUDIO NOIR</span><span>Website-Demo von Lucario Technologies</span></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
